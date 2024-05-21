@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="website1" content="This is the first practice html+css website">
+    <link rel="stylesheet" href="Untitled-3.css">
+    <title>IATT Website</title>
+</head>
+<body>
+    <div class="ban">
+        <div class="nav">
+            <a href="#"><img src="https://i.postimg.cc/Wh81f9t8/logoiat-removebg-preview.png" loading="lazy"  width="60px" height="60px"  ></a>
+            <h1>IAT Technologies</h1> <br>        
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">subject</a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#"> Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div>
+                <button type="button"><span></span>Back</button>
+                <button type="button"> <span></span>Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="a">
+        <div class="aa">
+      
+
+           
+    <form id="loginForm">
+        <center><h1 style="color: whitesmoke;">Sign In</h1></center>
+        <input type="text" id="username" placeholder="Username or Email" >
+        <br>
+        <input type="password" id="password" placeholder="Password">
+       <br>
+        <center><button class="btn-91">
+            <span>Login</span>
+          </button></center>
+    </form></div>
+</div>
+<script>
+     
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        var users = {
+            'vignesh@12345.com': '1234@vignesh',
+            'annafausthinaamalathas@gmail.com': 'anna@2002',
+            'anne0444:gmail.com': 'anna@2002',
+            'perumaltheeviharajiny@gmail.com': 'theebi@11',
+          
+        };
+
+        if(users[username] === password) {
+            alert('Login successful!');
+            window.location.href = 'u.html'; // replace with your URL
+        } else {
+            alert('Invalid username or password.');
+        }
+    });
+</script>      
+</body>
+</html>
